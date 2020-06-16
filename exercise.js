@@ -1,51 +1,50 @@
-// Create a variable called name.
+//declare variable 'name'
 var name;
-// Assign a string "ozzy queen" to name.
+
+// assign value 'ozzy queen' to variable name 'name'
 name = " ozzy queen"
-// Output name on the console.
+// display value of 'name' variable to console
 console.log(name);
-// Output the string "<br/>" on the console.
+// display '<br/>' to console
 console.log("<br/>");
-// Create another variable called name.
+// declare 'name' variable
 var name;
-// Assign a string "ozzy hum" to name.
+// assign 'ozzy hum' to name
 name = "ozzy hum"
-// Output name on the console.
+// display value of 'name' variable to console
 console.log(name)
-// Create another variable called name.
+// declare 'name' variable
 var name;
-// Assign a string "sumi mike ozyy" to name.
+// assign value 'sumi mike ozyy' to variable name 'name'
 name = "sumi mike ozyy"
-// Output name on the console.
+// display value of 'name' variable to console
 console.log(name)
-// Create another variable called name.
+// declare 'name' variable
 var name;
-// Assign a string "ozzy bp" to name.
+// assign value 'ozzy bp' to variable name 'name'
 name = " ozzy bp"
-// Output name on the console.
+// display value of 'name' variable to console
 console.log(name)
-// Assign a string "Bridget ozzy" to name.
+// assign value 'Bridget ozzy' to variable name 'name'
 name = " Bridget ozzy"
-// Output name on the console.
+// display value of 'name' variable to console
 console.log(name)
-// Create a variable called age.
+// declare 'age' variable
 var age;
-// Create another variable called name.
+// declare 'name' variable
 var name;
-/* 
-Assign an integer 50 to age.
-Assign a string "mirembe agaba kwesi" to name.
-*/
+// assign value of 50 to variable name age
 age = 50;
+// assign value of 'mirembe agaba kwesi' to variable name 'name'
 name = "mirembe agaba kwesi"
-// Output the string combining name and age on the browser.
+// write variable expression into an HTML output
 document.write("My name is " +name +" "+ "and I am "+age+" "+" years old");
 
-// Create a variable called x.
+
 var x;
-// Output x on the browser.
+// write variable 'x' into an HTML output
 document.write(x);
-// An undefined operand is assigned to another variable x.
+// assign x value as undefined
 var x = undefined;
-// Output x on the console.
+// display value of 'x' variable to console
 console.log(x);
