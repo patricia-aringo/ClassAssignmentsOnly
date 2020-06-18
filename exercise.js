@@ -40,11 +40,11 @@ name = "mirembe agaba kwesi"
 // write variable expression into an HTML output
 document.write("My name is " +name +" "+ "and I am "+age+" "+" years old");
 
-
+// declaring 'x' variable
 var x;
 // write variable 'x' into an HTML output
 document.write(x);
-// assign x value as undefined
+// redeclaring variable 'x' and assigning a value of undefined
 var x = undefined;
 // display value of 'x' variable to console
 console.log(x);
