@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        
+        
+        <style>
+
+          /* styling the main Div */
+          #headTitle{
+              border-style: solid;
+              border-radius: 20PX;
+              border-width: 1px;
+              background-color: rgb(204,238,185);
+              color: rgb(0,119,21);
+              width: 60%;
+              
+              margin: 0 auto;
+              padding: 10px;
+            }
+            
+            /* styling the inner DIV */
+            .container {
+              
+              clear: both;
+              background-color: rgb(255,255,255);
+              
+            }
+
+            /* styling the form imput elemnts */
+            .container input {
+              width: 20%;
+              clear: both;
+            }
+
+            /* 
+              styling the form content
+             */
+            #cont{
+              margin: 0 auto;
+              border-style: solid;
+              border-width: 1px;
+              border-color: green;
+              font-weight: bold;
+              color: black;
+              padding-bottom: 60px;
+            }
+
+            /* adding padding at the bottom */
+            .myform{
+              padding: 0.3%;
+            }
+              
+            /* 
+            STYLING THE LABELS
+             */
+            label {
+              /* display: inline-block; */
+              width: 240px;
+              float: left;
+              /* white-space: nowrap; */
+            }           
+            
+        </style>
+
+    </head>
+
+<body>
+
+  <div id="headTitle">
+    <h1>Grouped form controls with too long legend:</h1>
+    <div class="container" id="cont">
+  <form action="" class="myform">
+                <fieldset>
+
+                    <legend>Your Address:</legend>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="street"><br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city"><br><br>
+                   </fieldset>
+               
+                   <fieldset>
+                     <legend>Additional Details</legend>
+                     <label for="bio">Biography</label>
+                     <textarea name="bio" rows="3" cols="24"></textarea><br><br>
+                     
+                     <label for="image">Image</label>
+                     <input type="file" id="image"><br><br>
+                     
+                     <label for="ageGroup">Age Group</label>
+                       <select name="ageGroup" id="ageGroup">
+                         <option value="0">0 to 9</option>
+                         <option value="10">10 to 14</option>
+                         <option value="15">15 to 20</option>
+                         <option value="21">21 to 25</option>
+                         <option value="26">26 to 30</option>
+                         <option value="32">32 to 40</option>
+                         <option value="41">41 to 50</option>
+                         <option value="51">51 to 64</option>
+                         <option value="65">65 to 84</option>
+                       </select>
+                    </fieldset>
+               
+                    <fieldset>
+                     <legend>Interest</legend>
+                     <label for="hobbies">Hobbies</label>
+                       <select name="hobbies" id="hobbies" multiple>
+                         <option value="Soccer">Playing Soccer</option>
+                         <option value="Dancing">Dancing</option>
+                         <option value="Gardening">Gardening</option>
+                         <option value="Movies">Watching Movies</option>
+                       </select><br><br>
+                       
+                      <label for="car">Favorite Car? </label>
+                     <select name="car" id="cars">
+                       <option value="volvo">Volvo</option>
+                       <option value="saab">Saab</option>
+                       <option value="opel">Opel</option>
+                       <option value="audi">Audi</option>
+                     </select><br><br>
+                     
+                     <label for="hobbies">Favourite Public Transport? </label>
+                     <select name="tansport" id="hobbies" multiple>
+                         <option value="Ground">Ground</option>
+                         <option value="Train">Train</option>
+                         <option value="Bus">Bus</option>
+                         <option value="Water">Water</option>
+                       </select>
+                    </fieldset>
+  </form>
+  </div>
+  </div>
+
+  <div style="text-align: center;">&copy; <a href="https://joshuamakula.github.io/form/">Joshua Makula</a> </div>
+
+  
+  
+</body>
+</html>
