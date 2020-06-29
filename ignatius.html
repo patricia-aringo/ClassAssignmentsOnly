@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ignatius' Form</title>
+</head>
+<style>
+    body {
+        padding: 10px 260px;
+        /* Changing the document font size in order for the document to fit in the page */
+        font-size: .75rem;
+
+    }
+
+    .form_data {
+        float: left;
+        width: 180px;
+    }
+
+    .input {
+        width: 17%;
+        padding: 0px 10px;
+    }
+
+    input {
+        margin-bottom: 5px;
+    }
+
+    .row {
+        padding: 0px;
+    }
+
+    .out {
+        padding: 5px;
+        border: 1px solid #007715;
+    }
+
+    .outter-out {
+        padding: 0 12px 12px 12px;
+        background-color: #cceeb9;
+        border: 1px solid #007715;
+        border-radius: 15px;
+    }
+</style>
+
+<body>
+    <div class="outter-out">
+        <!-- The page heading -->
+        <h2 style="color: #007715;font-weight: bolder;">Grouped form controls with too long legend:</h2>
+        <div class="container-fluid out" style=" background-color: white;">
+            <b>
+                <!-- Creating the "your address" section -->
+                <fieldset>
+                    <legend>Your address</legend>
+
+                    <div class="form_data">First Name</div>
+                    <div> <input type="text" class="input" name=" F_name"></div>
+                    <div class="form_data">Last Name </div>
+                    <div> <input type="text" class="input" name=" L_name"></div>
+                    <div class="form_data">Street </div>
+                    <div> <input type="text" class="input" name=" street"></div>
+                    <div class="form_data">City </div>
+                    <div> <input type="text" class="input" name=" city"></div>
+
+
+                </fieldset>
+                <!-- Creating the "Additional Details" section -->
+                <fieldset>
+                    <legend>Additional Details</legend>
+
+                    <div class="form_data ">biography</div>
+                    <div> <textarea style="width:21%"></textarea></div>
+
+                    <div class="form_data">Image </div>
+                    <div> <input type="file" name=" file"></div>
+                    <div class="form_data">Age Group
+                    </div>
+                    <div>
+                        <select style="width: 16%; border-radius: 5px;">
+                            <option disabled hidden selected>0 to 9 Years</option>
+                            <option>1 year</option>
+                            <option>2 years</option>
+                            <option>3 years</option>
+                            <option>4 years</option>
+                            <option>5 years</option>
+                            <option>6 years</option>
+                            <option>7 years</option>
+                            <option>8 years</option>
+                            <option>9 years</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+                <!-- Creating the "Interests" section -->
+                <fieldset style="margin-bottom: 80px;">
+                    <legend>Interests</legend>
+
+                    <div class="form_data">Hobbies </div>
+                    <div> <textarea
+                            style="width: 13%; font-family: serif; height: 65px;">Playing soccer Dancing      Gardening   Watching movies</textarea>
+                    </div>
+
+                    <div class="form_data">Favourite car?
+                    </div>
+                    <div>
+                        <select style="width: 14%; border-radius: 5px; margin-bottom: 5px;">
+                            <option>Volov</option>
+                            <option>Benz</option>
+                            <option>Subaru</option>
+                            <option>audi</option>
+
+                        </select>
+                    </div>
+                    <div class="form_data">Favourite public transport?
+                    </div>
+                    <script>
+                        textarea.StyledText.Value = "Ground"
+textarea.StyledText.Bold(7, 5) = True // "World" is now bold
+                    </script>
+                    <div>
+                        <textarea
+                            style="width: 10%;font-family: serif; height: 64px;">Ground            Train                          Bus              Water </textarea>
+                    </div>
+                   
+
+
+                </fieldset>
+                <!-- Adding my sign -->
+                <div style="float: right;">&copy <small style=" font-size: 10px; font-weight: bold;">IGNATIUS |
+                        2020</small></div>
+            </b>
+        </div>
+    </div>
+</body>
+
+</html>
