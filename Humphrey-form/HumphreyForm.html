@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=br, initial-scale=1.0">
+    <title>Humphrey form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--form start-->
+    <form>
+      <!--fisrt fieldset-->
+        <fieldset>
+          <!--Your address section-->
+          <legend>Your address</legend>
+          <div>
+            <label for="firstname">First name</label>
+            <input id="first-name" type="text"/>
+          </div>
+          <div>
+            <label for="lastname">Last name </label>
+            <input id="last-name" type="text"/>
+          </div>
+
+          <div>
+            <label for="street">Street</label>
+            <input id="street" type="text"/>
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input id="street" type="text"/>
+        </fieldset>
+        <!--second fieldset-->
+        <fieldset>
+          <!--Additional details section-->
+            <legend>Additional details</legend>
+            <br>
+            <div>
+              <label for="biography">Biography</label>
+              <textarea name="biography" id="biography" cols="30" rows="2"></textarea>
+            </div>
+            <br>
+            <div>
+              <label for="image">Image</label>
+              <input id="image" type="file"/>
+            </div>
+            <br>
+            <div>
+              <label for="age-group">Age Group</label>
+              <select id="age-group">
+                <option>
+                  0 to 9 Years
+                </option>
+               </select>
+            </div>
+            <br>
+          </fieldset>
+          <!--Third fieldset-->
+          <fieldset>
+            <!--intrests section-->
+            <legend>Interests</legend>
+            <br>
+            <div>
+              <label for="hobbies">Hobbies</label>
+              <select id="hobbies" multiple="hobbies">
+                <option>
+                  Playing soccer
+                </option>
+                <option>
+                  Dancing
+                </option>
+                <option>
+                  Gardening
+                </option>
+                <option>
+                  Watching movies
+                </option>
+              </select>
+            </div>
+            <br>
+            <!--favourite car section-->
+            <div>
+              <label for="favourite-car">Favourite car?</label>
+              <select id="favourite-car"><optgroup label="favourite-car">
+                  <option>
+                    Volvo
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <br>
+            <div>
+              <!--favourite public tramsport section-->            
+              <label for="public-transports">Favourite public transport?</label>
+              <select id="public-transports" multiple="public-transports">
+                  <optgroup label="Ground">
+                  <option>
+                    Train
+                  </option>
+                  <option>
+                    Bus
+                  </option>
+                </optgroup><optgroup label="Water">
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+          </fieldset>
+    </form>
+    <!--form end-->
+    <!--copy right-->
+    <p class="my-name"><i>&copy;Humphrey Bwire: <span>FORM ASSIGNMENT<br>
+     &nbsp;&nbsp; Rights Reserved</span></i></p>
+</body>
+</html>
