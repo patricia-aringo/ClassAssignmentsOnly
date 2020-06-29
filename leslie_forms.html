@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+    <div class="groupform">
+        <h1> Grouped form controls with too long legend:</h1>
+    </div>
+    <div class="main">
+        <fieldset>
+            <legend>Your address</legend>
+            <label for="First name ">First name</label>
+            <input name="First name" id="First name" type="text">
+            <br>
+            <br>
+            <label for="Second name">Second name</label>
+            <input name="Second name" id="Second name" type="text">
+            <br>
+            <br>
+            <label for="Street">Street</label>
+            <input name="Street" id="street" type="text">
+            <br>
+            <br>
+            <label for="City">City</label>
+            <input name="City" id="city" type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Additional details</legend>
+            <label for="Biography">Biography</label>
+            <textarea name="Biography" id="biography" cols="" rows=""></textarea>
+            <br>
+            <br>
+            <label for="Image">Image</label>
+            <input type="file" name="Image" id="image">
+            <br>
+            <br>
+            <label for="Age group">Age Group</label>
+            <input type="number" name="age group" id="age group" min="0" max="9" step="any" placeholder="0 to 9 years">
+        </fieldset>
+        <fieldset>
+            <legend>Interests</legend>
+            <label for="Hobbies">Hobbies</label>
+            <select name="Hobbies" id="hobbies" multiple size="4">
+                <option value="Playing soccer">Playing soccer</option>
+                <option value="Dancing">Dancing</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Watching movies">Watching movies</option>
+            </select>
+            <br>
+            <br>
+            <label for="Favourite car?">Favourite car?</label>
+            <select name="Favourite car?" id="Favourite car">
+                <option value="Volvo">Volvo</option>
+                <option value="Mercedes Benz">Mercedes Benz</option>
+                <option value="Range rover">Range rover</option>
+            </select>
+            <br>
+            <br>
+            <label for="Favourite public transport?">Favourite public transport?</label>
+            <select name="Favourite public transport" id="Favourite public transport" multiple size="4">
+                <optgroup label="Ground">
+                    <option value="Train">Train</option>
+                    <option value="Bus">Bus</option>
+                </optgroup>
+                <optgroup label="Water">
+                    <!--<option value="yatcht">yatcht</option>
+                <option value="cruise ship">cruise ship</option>-->
+                </optgroup>
+            </select>
+
+        </fieldset>
+
+    </div>
+
+
+</body>
+
+</html>
