@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  html{
+        font-family:sans-serif;
+        color:#333;
+    }
+    body{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 15px;
+        border: 2px solid green;
+    }
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+.container {
+  border-radius: 20px;
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Your address</legend>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Street</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="city">City</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lcity" name="city">
+    </div>
+  </div>
+  
+  </form>
+</div>
+<div class="container">
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Additional details</legend>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Biograpgy</label>
+    </div>
+    <div class="col-75">
+      <textarea name="message" style="width:200px; height:50px;"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Image</label>
+    </div>
+    <div class="col-75">
+      <input type="file" id="myfile" name="myfile">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Age group</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  
+  </form>
+</div>
+<div class="container">
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Interests</legend>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Hobbies</label>
+    </div>
+    <div class="col-75">
+      <textarea name="message" style="width:200px; height:80px;">Playing soccer Dancing Gardening Watching movies </textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Favourite car</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="favourite car">
+        <option value="australia">volvo</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Favourite public transport</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  
+  </form>
+</div>
+
+</body>
+</html>
