@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Form title-->
+    <title>Basic Form</title>
+    <!--Style applied-->
+    <style>
+        #content {
+            width: 50%;
+            padding: 0 5.5px 10px 10px;
+            margin: 0 auto;
+            border: 1px solid green;
+            border-radius: 6px;
+            background-color: lightgreen;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: medium;
+            color: green;
+        }
+
+        form {
+            width: 660px;
+            border: solid;
+            border: 1px solid green;
+            background-color: white;
+        }
+
+        fieldset {
+            width: 93%;
+            margin: 0 auto;
+        }
+
+        td {
+            width: 200px;
+            vertical-align: top;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            font-size: 14pt;
+            color: green;
+            margin: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <p>Grouped form controls with too long legend:</p>
+        <form>
+            <!--Your address section-->
+            <div class="your_address">
+                <fieldset>
+                    <legend>Your address</legend>
+                    <table>
+                        <tr>
+                            <td><label>First name</label></td>
+                            <td><input type="text" name=first_name></td>
+                        </tr>
+                        <tr>
+                            <td><label>Last name</label></td>
+                            <td><input type="text" name=last_name></td>
+                        </tr>
+                        <tr>
+                            <td><label>Street</label></td>
+                            <td><input type="text" name=street></td>
+                        </tr>
+                        <tr>
+                            <td><label>City</label></td>
+                            </td>
+                            <td><input type="text" name=city></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+
+            <!--Additional details section-->
+            <div class="additional_details">
+                <fieldset>
+                    <legend>Additional details</legend>
+                    <table>
+                        <tr>
+                            <td><label>Biography</label></td>
+                            <td><textarea name="biography" cols="25"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>Image</label></td>
+                            <td><input type="file" name=image></td>
+                        </tr>
+                        <tr>
+                            <td><label>Age Group</label></td>
+                            <td><select name="car">
+                                    <option value="0 to 9 Years">0 to 9 Years</option>
+                                </select></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+
+            <!--Interests section-->
+            <div class="interests">
+                <fieldset>
+                    <legend>Interests</legend>
+                    <table>
+                        <tr>
+                            <td><label>Hobbies</label></td>
+                            <td><select name="hobbies" size="4">
+                                    <option value="Playing soccer">
+                                        Playing soccer</option>
+                                    <option value="Dancing">Dancing</option>
+                                    <option value="Gardening">Gardening</option>
+                                    <option value="Watching movies">Watching movies</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label>Favourite car?</label></td>
+                            <td><select name="car">
+                                    <option value="Volvo">Volvo</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label>Favourite public transport?</label></td>
+                            <td><select name="public_transport" size="4">
+                                    ​<optgroup label="Ground">
+                                        <option value="Train">Train</option>
+                                        <option value="Bus">Bus</option>
+                                    </optgroup>
+                                    <optgroup label="Water">
+                                    </optgroup>
+                                </select></td>
+                        </tr>
+                    </table>
+                </fieldset><br /><br /><br /><br />
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <!--Copyright-->
+        <p>&copy; Copyright 2020 Mwanika Stephen Crispin</p>
+    </footer>
+</body>
+
+</html>
