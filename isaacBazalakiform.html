@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>
+        isaac_bazalaki exercise 3
+    </title>
+    <style>
+         body {
+         padding: 10px 250px;
+         font-size: .80rem;
+         font-weight: 200;
+         text-align: left;
+         }
+
+         .container {
+         background-color: white;
+
+         }
+
+         h3 {
+         color: #007715;
+         font-family: Arial, Helvetica, sans-serif;
+         }
+
+         .form-group {
+         float: left;
+         width: 180px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight: bold;
+         }
+
+         .margin {
+         padding: 0 12px 12px 12px;
+         background-color: #cceeb9;
+         border: 1px solid #007715;
+         border-radius: 15px;
+         }
+
+         .options {
+         width: 28%;
+         border-radius: 5px;
+         margin-bottom: 5px;
+         }
+
+         .optionsAge {
+         border-radius: 5px;
+         width: 30%;
+         }
+
+         .text-body {
+         width: 34%;
+         }
+
+         .input {
+         width: 17%;
+         padding: 0px 10px 0px 10px;
+         }
+
+         input {
+         margin-bottom: 5px;
+         }
+
+         .row {
+         padding: 0px 0px 0px 0px;
+         }
+
+         .out {
+         padding: 5px;
+         border: 1px solid #007715;
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="margin">
+        <h3>
+            Grouped form controls with too long legend:
+        </h3>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>
+                        <strong>Your address</strong>
+                    </legend>
+
+                    <div class="form-group">
+                        <label>
+                            First Name
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="text" class="input" name="first_name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Last Name
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="text" class="input" name="last_name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Street
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="text" class="input" name="street">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            City
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="text" class="input" name="city">
+                    </div>
+                </fieldset>
+                  <br>
+                <fieldset>
+                    <legend>
+                        <strong>
+                            Additional Details
+                        </strong>
+                    </legend>
+
+                    <div class="form-group">
+                        <label>
+                            biography
+                        </label>
+                    </div>
+
+                    <div>
+                        <textarea class="text-body">
+                            </textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Image
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="file" name="image">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Age Group
+                        </label>
+                    </div>
+
+                    <div>
+                        <select class="optionsAge">
+                            <option>0 to 9 Years</option>
+                            <option>10 to 19 years</option>
+                            <option>20 to 29 years</option>
+                            <option>30 to 39 years</option>
+                            <option>40 to 49 years</option>
+                            <option>50 to 59 years</option>
+                            <option>60 to 69 years</option>
+                        </select>
+                    </div>
+                </fieldset>
+                   <br>
+                <fieldset style="margin-bottom: 30px;">
+                    <legend>
+                        <strong>
+                            Interests
+                        </strong>
+                    </legend>
+
+                    <div class="form-group">
+                        <label>
+                            Hobbies
+                        </label>
+                    </div>
+
+                    <div>
+                        <textarea cols="23" rows="09">
+                                Playing soccer
+                                Dancing
+                                Gardening
+                                Watching movies
+                            </textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Favourite car?
+                        </label>
+                    </div>
+
+                    <div>
+                        <select class="options">
+                            <option>Volvo</option>
+                            <option>Benz</option>
+                            <option>Jeep</option>
+                            <option>Audi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Favourite public transport?
+                        </label>
+                    </div>
+
+                    <div>
+                        <textarea cols="20" rows="09">
+                                Ground
+                                Train
+                                Bus
+                                Water
+                            </textarea>
+                    </div>
+                </fieldset>
+
+                <div style="float: inline-end;">
+                    <div class="clearfix">
+                    </div>
+                    &copy
+                    <small style="font-family: Arial, Helvetica, sans-serif;">
+                        <strong>
+                            isaac_bazalaki
+                        </strong>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
