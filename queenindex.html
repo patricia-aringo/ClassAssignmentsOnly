@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+
+    </title>
+    <style>
+        .control,
+        fieldset {
+            margin: 6px 0;
+        }
+        
+        label {
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+        }
+        
+        input+label {
+            width: auto;
+        }
+        
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            text-align: center;
+        }
+        
+        .border {
+            border: 1px solid lightgreen;
+            color: black;
+            margin: 0px 5px 5px 0px;
+            width: 500px;
+            padding: 10px 10px 0px 10px;
+            background-color: white;
+        }
+        
+        .container {
+            border: 2px solid lightgreen;
+            margin: 25px 300px 400px 400px;
+            /* box-sizing: border-box; */
+            padding: 10px;
+            border-radius: 20px;
+            width: 525px;
+            background-color: rgb(204, 238, 185);
+            position: fixed;
+        }
+        
+        .heading1 {
+            color: green;
+            width: auto;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span class="heading1">Grouped form controls with too long legend:</span>
+
+        <div class="border">
+
+            <form>
+
+                <fieldset>
+                    <legend>Your address</legend>
+                    <div class="control ">
+                        <label for="first_name ">First name</label>
+                        <input id="first_name " type="text " />
+                    </div>
+                    <div class=" control ">
+                        <label for="last_name ">Last name</label>
+                        <input id="last_name " type="text " />
+                    </div>
+                    <div class="control ">
+                        <label for="street ">Street</label>
+                        <input id="street " type="text " />
+                    </div>
+                    <div class="control ">
+                        <label for="city ">City</label>
+                        <input id="city " type="text " />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional details</legend>
+                    <div class="control ">
+                        <label for="biography ">Biography</label>
+                        <textarea id="biography "></textarea>
+                    </div>
+                    <div class="control ">
+                        <label for="image ">Image</label>
+                        <input id="image " placeholder="choose file" type="file " />
+                        <small>No file chosen</small>
+                    </div>
+                    <div class="control ">
+                        <label for="age_group ">Age Group</label><select id="age_group ">
+          <option>
+            0 to 9 Years
+          </option>
+          <option>
+            10 to 19 Years
+          </option>
+          <option>
+            20 to 29 Years
+          </option>
+          <option>
+            30 to 39 Years
+          </option>
+          <option>
+            40 to 49 Years
+          </option>
+          <option>
+            50 to 59 Years
+          </option>
+          <option>
+            60 to 69 Years
+          </option>
+          <option>
+            70 to 79 Years
+          </option>
+          <option>
+            80 to 89 Years
+          </option>
+          <option>
+            90 to 99 Years
+          </option>
+        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Interests</legend>
+                    <div class="control ">
+                        <label for="hobbies ">Hobbies</label><select id="hobbies " multiple=" ">
+          <option>
+            Playing soccer
+          </option>
+          <option>
+            Dancing
+          </option>
+          <option>
+            Gardening
+          </option>
+          <option>
+            Watching movies
+          </option>
+        </select>
+                    </div>
+                    <div class="control ">
+                        <label for="favourite_car ">Favourite car?</label><select id="favourite_car "><optgroup label="Swedish Cars ">
+            <option>
+              Volvo
+            </option>
+            <option>
+              Saab
+            </option>
+          </optgroup><optgroup label="German Cars ">
+            <option>
+              Mercedes
+            </option>
+            <option>
+              Audi
+            </option>
+          </optgroup></select>
+                    </div>
+                    <div class="control ">
+                        <label for="public_transports ">Favourite public transport?</label><select id="public_transports " multiple=" "><optgroup label="Ground ">
+            <option>
+              Train
+            </option>
+            <option>
+              Bus
+            </option>
+          </optgroup><optgroup label="Water ">
+            <option>
+              Ship
+            </option>
+            <option>
+              Submarine
+            </option>
+          </optgroup><optgroup label="Air ">
+            <option>
+              Plane
+            </option>
+            <option>
+              Cable Car
+            </option>
+          </optgroup></select>
+                    </div>
+                    <div class="footer">
+                        <p>copyight @ 2020 Queen</p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>
