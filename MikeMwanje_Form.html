@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mike Mwanje</title>
+        <style>
+
+            #outer{
+                border: 1px solid green;
+                margin: 50px;
+                padding: 15px;
+                padding-top: 0px;
+                background-color: lightgreen;
+                border-radius: 15px;
+            }
+
+            h2{
+                color: limegreen;
+                font-weight: 1000;
+            }
+
+            #inner{
+                border: 1px solid green;
+                background-color: #FFFFFF;
+                padding: 7px;
+                padding-bottom: 50px;
+            }
+
+            .control, fieldset {
+                margin: 6px 0;
+            }
+          
+            label {
+                display: inline-block;
+                width: 200px;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <h2>Grouped form controls with too long:</h2>
+            <div id="inner">
+                <div>
+
+                    <form>
+                        <fieldset>
+                            <legend>Your address</legend>
+                            <div class="control">
+                                <label>First name</label>
+                                <input type="text" />
+                            </div>
+                            <div class="control">
+                                <label>Last name</label>
+                                <input type="text" />
+                            </div>
+                            <div class="control">
+                                <label>Street</label>
+                                <input type="text" />
+                            </div>
+                            <div class="control">
+                                <label>City</label>
+                                <input type="text" />
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Additional details</legend>
+                            <div class="control">
+                                <label>Biography</label>
+                                <textarea> </textarea>
+                            </div>
+                            <div class="control">
+                                <label for="image">Image</label>
+                                <input type="file" />
+                            </div>
+                            <div class="control">
+                                <label>Age Group</label>
+                                <select>
+                                    <option>
+                                        0 to 9 Years
+                                    </option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Interests</legend>
+                            <div class="control">
+                                <label>Hobbies</label>
+                                <select multiple="">
+                                    <option>
+                                        Playing soccer
+                                    </option>
+                                    <option>
+                                        Dancing
+                                    </option>
+                                    <option>
+                                        Gardening
+                                    </option>
+                                    <option>
+                                        Watching movies
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="control">
+                                <label>Favourite car?</label>
+                                <select>
+                                    <optgroup>
+                                        <option>
+                                            Volvo
+                                        </option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="control">
+                                <label>Favourite public transport?</label>
+                                <select multiple="">
+                                    <optgroup label="Ground">
+                                        <option>
+                                            Train
+                                        </option>
+                                        <option>
+                                            Bus
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Water">
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <p> &copy;Mike Mwanje 2020 </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
