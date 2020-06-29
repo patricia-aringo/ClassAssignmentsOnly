@@ -1,0 +1,33 @@
+body {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+label {
+  width: 200px;
+  padding-right: 20px;
+  
+}
+
+#form_label {
+  color: #007715;
+  font-weight: bold;
+  font-size: large;
+  width: 400px;
+}
+
+#content {
+  background-color: #cceeb9;
+  border: 1px solid #007715;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+#forms {
+  width: 97%;
+  border: 1px solid #007715;
+  background-color: #fff;
+  padding: 0.3rem;
+  padding-bottom: 1rem;
+}

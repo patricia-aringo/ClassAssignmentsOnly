@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grouped form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content" >
+
+        <label for="form" id="form_label">Grouped form controls with two long legends:</label>
+		
+        <form action="/action_page.php" id="forms" name="forms" onsubmit="grouped_validation();">
+            <fieldset>
+                <legend>Your address</legend>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="street">Street</label>
+                <input type="text" id="Street" name="Street"><br><br>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city"><br><br>
+      
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional details</legend>
+                <label for="fname">Biography</label>
+                <textarea id="hobby" name="hobbies"></textarea><br><br>
+                
+
+                <label for="lname">Image:</label>
+                <input type="file" id="image" name="image"><br><br>
+
+                <label for="lname">Age group:</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                <option selected>0 to 9 Years</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+                </select>
+        
+            </fieldset>
+
+            <fieldset>
+                <legend>Interests:</legend>
+                <label for="fname">Hobbies:</label>
+
+                <select name="hobbies" id="hobbies" multiple>
+                <option value="playingsoccer">Playing Soccer</option>
+                <option value="dancing">Dancing</option>
+                <option value="gardening">Gardening</option>
+                <option value="watchingmovies">Watching Movies</option>
+                </select><br><br>
+
+                <label for="lname">Favourite car?:</label>
+                <select name="car" id="car" style="scrollbar-arrow-color:blue;">
+                <option value="volvo">Volvo</option>
+                </select>
+                <br><br>
+                <label for="transport" style="text-align: justify;">Favourite public transport?:</label>
+                <select name="transport" id="transport" multiple>
+                <optgroup label="Ground">
+                    <option value="Train">Train</option>
+                    <option value="Bus">Bus</option></optgroup>
+                <optgroup label="Water"> </optgroup>
+                </select>
+                <br>
+                
+            </fieldset>
+      
+        </form>
+
+        <span style="font-size: small;">Walter&copyright</span>
+    </div>
+
+</body>
+<script type="text/javascript" src="groupedform.js"></script>
+</html>
