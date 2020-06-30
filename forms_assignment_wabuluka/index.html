@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class= "container">
+    <h2>Grouped form controls with too long legend</h2>
+
+<form>
+
+    <fieldset>
+        <legend>Your address</legend>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname">
+        <label for="street">Street</label>
+        <input type="text" id="street" name="street">
+        <label for="city" style="padding-right: 3.5em;">City</label>
+        <input type="text" id="city" name="city">
+    </fieldset>
+    <fieldset>
+        <legend>Additional details</legend>
+        <label>Biography</label>
+        <textarea cols="22"></textarea>
+        <label>Image</label>
+        <input type="file" id="myFile" name="filename">
+        <label>Age Group</label>
+        <select name="cars" id="cars">
+            <option value="volvo">0 to 9 Years</option>
+            <option value="volvo">10 to 19 Years</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Interests</legend>
+        <label>Biography</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Playing Soccer</option>
+            <option value="volvo">Dancing</option>
+        </select>
+        <label>Image</label>
+        <input type="file" id="myFile" name="filename">
+        <label>Age Group</label>
+        <select multiple >
+            <option>Playing Soccer</option>
+            <option>Dancing</option>
+            <option>Gardening</option>
+            <option>Watching</option>
+        </select>
+        <label>Favourite car?</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="volvo">Toyota</option>
+        </select>
+        <label>Favourite public transport?</label>
+        <select multiple name="cat" id="cat">
+            <optgroup label="Ground">
+            <option value="601">Train</option>
+            <option value="602">Bus</option>
+            </optgroup>
+            <optgroup label="Water">
+                <option value="601">Boat</option>
+                </optgroup>
+            </select>
+    </fieldset>
+    
+</form>  
+
+<p class="copy"> &copy; davies wabuluka</p>
+</div>
+
+    
+</body>
+</html>
