@@ -1,5 +1,5 @@
 var validate=()=>{
-
+//
     var username=document.mydata.username;
     var telephone=document.mydata.telephone;
     var email=document.mydata.email; 
