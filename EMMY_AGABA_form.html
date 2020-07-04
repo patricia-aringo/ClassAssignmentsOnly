@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EMMY_AGABA_form.css">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+    <form>
+        <fieldset>
+            <div id ="fl">
+                <legend>Grouped form with too long legend:</legend>
+            </div>
+            <fieldset>
+        <!-- box for "your address" with values first name,last name, street, city respectively-->
+        
+        <fieldset>
+            
+            <legend>Your Address</legend>
+            <div class="control">
+                <label for="firstname">First Name</label>
+                    <input id="firstname" type="text" />
+             </div>
+             <div class="control">
+                 <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" />
+             </div>
+             <div class="control">
+                 <label for="street">Street</label>
+                 <input id="street" type="text"/>
+             </div>
+             <div class="control">
+                 <label for="city">City</label>
+                    <input id="city" type="text" />
+             </div>             
+        </fieldset>
+
+        <!-- box for "additional details" -->
+        <fieldset>
+            <legend>Additional Details</legend>
+            <div class="control">
+                <label for="biography">Biography</label>
+                <textarea id="biography"></textarea>
+            </div>
+            <div class="control">
+                <label for="image">Image</label>
+                <input type="text" id="image"/>
+            </div>
+            <div class="control">
+                <label for="agegroup">Age Group</label>
+                <select id="agegroup">
+                    <option>
+                        0 to 9 Years
+                    </option>
+                    <option>
+                        10 to 19 Years
+                    </option>
+                    <option>
+                        20 to 29 Years
+                    </option>
+                    <option>
+                        30 to 39 Years
+                    </option>
+                    <option>
+                        40 to 49 Years
+                    </option>
+                    <option>
+                        50 to 59 Years
+                    </option>
+                    <option>
+                        60 to 69 Years
+                    </option>
+                    <option>
+                        70 to 79 Years
+                    </option><option>
+                        80 to 89 Years
+                    </option>
+                    <option>
+                        90 to 99 Years
+                    </option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- box for Interests -->
+        <fieldset>
+        <legend>Interests</legend>
+        <div class="control">
+            <label for="hobbies">Hobbies</label>
+            <select id="hobbies" multiple="">
+            <option>
+                Playing soccer
+            </option>
+            <option>
+                Dancing
+            </option>
+            <option>
+                Gardening
+            </option>
+            <option>
+                Watching Movies
+            </option>
+        </select>
+        </div>
+        <div class="control">
+            <label for="favoritecar">Favorite Car</label>
+            <select id="favoritecar"><optgroup label="Swedish Cars">
+                <option>
+                    Volvo
+                </option>
+                <option>
+                    Saab
+                </option>
+                </optgroup>
+            <optgroup label="German Cars">
+                <option>
+                    Mercedes
+                </option>
+                <option>
+                    Audi
+                </option>
+            </optgroup>
+            </select>
+        </div>
+        <div class="control">
+            <label for="publictransports">Favorite Public Transport</label>
+            <select id="publictransports" multiple="">
+                <optgroup label="Ground">
+                    <option>
+                        Train
+                    </option>
+                    <option>
+                        Bus
+                    </option>
+                    </optgroup>
+                    <optgroup label="Water">
+                    </optgroup>
+            </select>
+        </div>
+        </fieldset>
+        <span id="emmy1">&copy; Emmy Agaba</span>
+    </fieldset>
+    </fieldset>
+</div>
+    </form>
+</div>
+</body>
+</html>
