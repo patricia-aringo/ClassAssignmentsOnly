@@ -5,7 +5,7 @@ var Mike = (name, age, height, weight) => {
 	this.weight = weight;
 }
 
-
+//mirembe
 var validate=()=>{
 
     var username=document.mydata.username;

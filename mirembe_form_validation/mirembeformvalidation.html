@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    
+    .main{
+        background-color: #33ffbd;
+        border: 1px solid green;
+        border-radius: 12px;
+        padding: 40px 10px 5px 10px;
+        width: 60%;
+        margin: auto;
+        height: 60%;
+    }
+
+    .inner{
+        border: 1px solid green;
+        margin: 20px;
+        background-color: white;
+        margin: 5px;
+        color: green;
+        color: black;
+        font-size: 15px;
+        padding-bottom: 100px;
+    }
+
+    
+
+    td{
+        padding-right: 100px;
+    }
+
+    footer{
+        text-align: center;
+    }
+.fieldset{
+        margin: 10px;
+        padding-left: 10px;
+    }
+    .fieldset label{
+    display: inline-block;
+}
+.fieldset b{
+    visibility: hidden;
+   
+}
+.fieldset.successful input{
+    border: 2px solid green;
+
+}
+
+.fieldset.successful textarea{
+    border: 2px solid green;
+
+}
+
+.fieldset.successful select{
+    border: 2px solid green;
+
+}
+
+.fieldset.error input{
+    border: 2px solid red;
+
+}
+
+.fieldset.error textarea{
+    border: 2px solid red;
+
+}
+
+.fieldset.error textarea{
+    border: 2px solid red;
+
+}
+
+.fieldset.error select{
+    border: 2px solid red;
+
+}
+
+
+.fieldset.error b{ 
+    color: red;
+    visibility: visible;
+   
+}
+
+.fieldset.fieldset.successful b{
+    visibility: visible;
+    color: green;
+}
+
+
+
+form button{
+    background-color: #33ffbd;
+    border: 1px solid #33ffbd;
+    display: block;
+    width: 50%;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    margin: auto;
+}
+
+
+
+
+
+    
+</style>
+
+</head>
+<body>
+<div class="main">
+    <h2>Grouped form controls with too long legend:</h2>
+<div class="inner">
+<form  name="form" id="form" action="#">
+    <fieldset >
+        <legend>Your address</legend>
+        
+        <div class="fieldset" id="fieldset"><label>First name</label><input type="text" name="fname" id="fname"><b></b></div>
+            
+        <div class="fieldset" id="fieldset"><label>Last name</label><input type="text" name="lname" id="lname"><b></b></div>
+        <div class="fieldset" id="fieldset"><label>Street</label><input type="text" name="street" id="street"><b></b></div>
+        <div class="fieldset" id="fieldset"><label>City </label><input type="text" name="city" id="city"><b></b></div>
+      
+
+    </fieldset>
+
+    <fieldset >
+        <legend>Additional details</legend>
+        
+        <div class="fieldset" id="fieldset"><label>Biology</label><textarea name="biography" cols="20" rows="1" id="biography"></textarea><b></b></div>
+        <div class="fieldset" id="fieldset"><label>Image</label><input type="file" name="pic" id="pic"><b></b></div>
+            <div class="fieldset" id="fieldset"><label>Age Group</label><b></b>
+                <select name="agegroup" id="agegroup">
+                <option value="Please select">Please select</option><b>
+                <option value="0-9">0 to 9 years</option>
+                <option value="10-19">10 to 19 years</option>
+                <option value="20-29">20 to 29 years</option>
+            </select></div>
+          
+
+    </fieldset>
+
+    <fieldset >
+        <legend>Interests</legend>
+        <div class="fieldset" id="fieldset">
+                <label>Hobbies</label><b></b><br><br>
+                <select name="hobbies" id="hobbies" multiple>
+                <option value="soccer">Playing Soccer</option>
+                <option value="dancing">Dancing</option>
+                <option value="gardening">Gardening</option>
+                <option value="movies">watching movies</option>
+            </select></div>
+        
+            <div class="fieldset" id="fieldset"><label>Favourite car?</label>
+                <select name="favoritecar" id="favoritecar">
+                <option value="Please Select">Please Select</option>
+                <option value="volvo">Volvo</option>
+                <option value="toyota">Toyota</option>
+                <option value="suzuki">Suzuki</option>
+            </select>
+            <b></b>
+        </div>
+    
+        
+        
+            <div class="fieldset" id="fieldset"><label>Favourite Transport?</label>
+                <select name="transport" id="transport" multiple>
+                <option value="ground">Ground</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="water">Water</option>
+            </select>
+            <b></b>
+        </div>
+     
+    </fieldset>
+
+    <button>submit</button> 
+
+</form>
+   
+</div>
+
+<footer>&copy; <i>Mirembe Eva: 2020</i></footer>
+
+
+</div>
+
+
+    
+</body>
+<script defer src="mirembeformvalidation.js">
+
+</script>
+       
+
+</html>
