@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href    ="/bootstrap-4.5.0-dist/css/bootstrap.min.css"> -->
+<style>
+#formBody{
+    font-weight: bolder;
+    border:1px solid rgb(16, 102, 16);
+    border-radius: 10px;
+    background-color: rgb(204, 250, 204);
+    
+}
+
+
+h1{
+    color: green;
+    padding-left: 18px;
+}
+
+ label for{
+padding-right: 200px;
+} 
+
+.content{
+    border:1px solid rgb(32, 194, 32);
+    margin: 10px 9px;
+    background-color: white;
+    margin:18px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+    padding: 10px;
+  
+}
+.main-content{
+    padding-bottom: 70px;
+    
+}
+
+footer{
+    text-align: center;
+}
+#submit{
+    text-align: center;
+}
+#middle{
+  padding-right:  180px;
+    
+    
+}
+</style>
+    
+</head>
+
+<body>
+    
+    <div class="container" id="formBody">
+        <div class="form-row">
+            <h1>Grouped form controls with too long legend:</h1>
+            <div class="content">
+                <div>
+                    <fieldset>
+                        <legend>Your address</legend>
+                        <form name="data">
+                            <div>
+                                <label for="firstname" id="middle">First name</label>
+                                <input type="text" class="form-control" name="firstname" id="firstname">
+                            </div><br>
+                            <div>
+                                <label for="lastname" id="middle">Last name</label>
+                                <input type="text" class="form-control" name="lastname" id="lastname">
+                            </div><br>
+                            <div>
+                                <label for="street"  id="middle">Street</label>
+                                <input type="text" class="form-control" name="street" id="street">
+                            </div><br>
+                            <div>
+                                <label for="city"  id="middle">City</label>
+                                <input type="text" class="form-control" name="city" id="city">
+                            </div>
+    
+                        </form>
+                    </fieldset>
+    
+                </div>
+                <div>
+                    <fieldset >
+                        <legend>Additional details</legend>
+                            <form name="data">
+                            
+                                <div>
+                                    <label for="biography"  id="middle">Biography</label>
+                                    <textarea name="biography" id="biogrpahy"></textarea>
+                                </div>
+                                <div>
+                                    <label for="image"   id="middle">image</label>
+                                    <input type="file" class="form-control" name="image" id="image" placeholder="choose file">
+                                    
+                                </div>
+                                <div>
+                                    <label for="agegroup"  id="middle">Age group</label>
+                                   
+                                    <select name="agegroup" id="agegroup">
+                                        <option value="number">0 to 9</option>
+                                        <option value="">10 to 19</option>
+                                        <option value="">20 to 29</option>
+                                        <option value="">30 to 39</option>
+                                        
+                                    </select>
+                                </div>
+                            </form>
+                    </fieldset>
+                    
+                </div>
+                <div class="main-content">
+                    <fieldset>
+                        <legend>Interests</legend>
+                            <!-- <form action=""> -->
+                                
+                                <div>
+                                    <label for="hobbies"  id="middle">Hobbies</label>
+                                    <select name="" id="" multiple >
+                                        <option value="">Playing soccer</option>
+                                        <option value="">Dancing</option>
+                                        <option value="">Gardening</option>
+                                        <option value="">Watching movies</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="favouritecar"  id="middle">Favourite car?</label>
+                                  
+                                    <select name="" id="">
+                                        <option value="">volvo</option>
+                                        <option value="">benz</option>
+                                        <option value="">toyota</option>
+                                    </select>
+                                    
+                                </div>
+                                <div>
+                                    <label for="favouritpublictransport"  id="middle">Favourite public transport?</label>
+                                    <select multiple>
+                                        <option>Group</option>
+                                        <option>Train</option>
+                                        <option>Bus</option>
+                                        <option>Water</option>
+                                    </select>
+                                </div>
+                            <!-- </form> -->
+                            </fieldset>
+                            <div id="submit">
+                             <input type="submit" name="submit" id="submit" value="Log in" onclick="validate()">
+                            </div>
+                    
+                    
+                </div>
+            </div>
+            
+
+        </div>
+        <footer>&copy Patricia Aringo</footer>
+    </div>
+    
+</body>
+<script src="PatriciaFormLegend.js"></script>
+</html>
