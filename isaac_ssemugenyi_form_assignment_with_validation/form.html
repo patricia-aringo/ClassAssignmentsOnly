@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start form 1 -->
+        <form action="#" name="data" id="form">
+            <h3>Grouped form controls with too long legend:</h3>
+            <span>&copy; IsaacS</span>
+            <!-- Start form main div -->
+            <div class="form-main">
+                <!-- First form section -->
+                <fieldset class="form-cover">
+                    <legend>Your address</legend>
+                    <div class="form-details">
+                        <!-- Input one -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="first">First name</label>
+                            </div>
+                            <div class="column-75">
+                                <input type="text" id="first" name="first_name">
+                                <small>error msg</small>
+                            </div> 
+                        </div>
+                        <!-- End input one -->
+                        <!-- Input two -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="last">Last name</label>
+                            </div>
+                            <div class="column-75">
+                                <input type="text" id="last" name="last_name">
+                                <small>errormsg</small>
+                            </div>
+                        </div>
+                        <!-- End input two -->
+                        <!-- Input three -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="street">Street</label>
+                            </div>
+                            <div class="column-75">
+                                <input type="text" id="street" name="street">
+                                <small>errormsg</small>
+                            </div>
+                        </div>
+                        <!-- End input three -->
+                        <!-- Input four -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="city">City</label>
+                            </div>
+                            <div class="column-75">
+                                <input type="text" id="city" name="city">
+                                <small>errormsg</small>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- End input four -->
+                    </div>
+                </fieldset>
+                <!-- End first form section -->
+                <!-- Second form section -->
+                <fieldset class="form-cover">
+                    <legend>Additional details</legend>
+                    <div class="form-details">
+                        <!-- Input Five -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="biography">Biography</label>
+                            </div>
+                            <div class="column-75">
+                                <textarea name="biography" id="biography" cols="10"></textarea>
+                                <small>errormsg</small>
+                            </div>                        
+                        </div>
+                        <!-- End input five -->
+                        <!-- Input six -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="image">Image</label>
+                            </div>
+                            <div class="column-75"> 
+                                <input type="file" name="image" id="image">
+                                <small>errormsg</small>
+                            </div>   
+                        </div>
+                        <!-- End input six -->
+                        <!-- Input seven -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="age">Age Group</label>
+                            </div>
+                            <div class="column-75">
+                                <select name="age" id="age">
+                                    <option value="" selected>Please select</option>
+                                    <option value="0 to 9 Years">0 to 9 Years</option>
+                                    <option value="10 to 19 Years">10 to 19 Years</option>
+                                    <option value="20 to 29 Years">20 to 29 Years</option>
+                                    <option value="30 to 39 Years">30 to 39 Years</option>
+                                    <option value="40 to 49 Years">40 to 49 Years</option>
+                                </select>
+                                <small>errormsg</small>
+                            </div>
+                        </div>
+                        <!-- End input seven -->
+                        <br>
+                    </div>
+                </fieldset>
+                <!-- End second form section -->
+                <!-- Third form section -->
+                <fieldset class="form-cover">
+                    <legend>Interests</legend>
+                    <div class="form-details">
+                        <!-- Input eight -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="hobby">Hobbies</label>
+                            </div>
+                            <div class="column-75">
+                                <select name="hobby" id="hobby" multiple>
+                                    <option value="soccer">Playing soccer</option>
+                                    <option value="dance">Dancing</option>
+                                    <option value="garden">Gardening</option>
+                                    <option value="movie">Watching movies</option>
+                                </select>
+                                <small>errormsg</small>
+                            </div> 
+                        </div>
+                        <!-- End input eight -->
+                        <!-- Input nine -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="car">Favourite car?</label>
+                            </div>
+                            <div class="column-75">
+                                <select name="vehicle" id="vehicle">
+                                    <option value="" selected>Please select</option>
+                                    <option value="volvo">Volvo</option>
+                                    <option value="subaru">Subaru</option>
+                                    <option value="xtrail">Xtrail</option>
+                                    <option value="kruger">Kruger</option>
+                                </select>
+                                <small>errormsg</small>
+                            </div>
+                        </div>
+                        <!-- End, input nine -->
+                        <!-- Input ten -->
+                        <div class="detail">
+                            <div class="column-25">
+                                <label for="car">Favourite public transport?</label>
+                            </div>
+                            <div class="column-75">
+                                <select name="transport" id="transport" multiple>
+                                    <option value="ground">Ground</option>
+                                    <option value="train">Train</option>
+                                    <option value="bus">Bus</option>
+                                    <option value="water">Water</option>
+                                </select>
+                                <small>errormsg</small>
+                            </div>
+                        </div>
+                        <!-- End input ten -->
+                        <br>
+                    </div>
+                </fieldset>
+                <!-- End third form section -->
+                <!--  -->
+                <!-- Submit Button -->
+                <div class="detail">
+                    <div class="column-25">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End form main div -->
+        </form>
+        <!-- End form 1 -->
+    </div>
+</body>
+<script defer src="validation.js"></script>
+</html>

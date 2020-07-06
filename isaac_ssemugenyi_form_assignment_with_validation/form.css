@@ -1,0 +1,154 @@
+/* Normalising the document */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Styling the containing div */
+.container {
+    margin: 40px auto;
+    justify-content: center;
+}
+/* Styling h2 element in container div */
+.container h3 {
+    color: green;
+    padding-bottom: 10px;
+}
+.container span {
+    margin: -30px 20px 0 0;
+    color: blue;
+    float: right;
+}
+/* Styling the form element */
+form {
+    border-radius: 15px;
+    max-height: auto;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 800px;
+    background-color: rgba(0, 255, 255, .5);
+    border-top: 1px solid rgba(0, 255, 0, 1);
+    border-right: 2px solid rgba(0, 255, 0, .8);
+    border-left: 1px solid rgba(0, 255, 0, .8);
+    border-bottom: 1px solid rgba(0, 255, 0, .8);
+}
+/* Styling div that contains all content */
+.form-main {
+    padding: 5px 3px 90px 5px;
+    background-color: white;
+    border-top: 2px solid rgba(0, 128, 0, .4);
+    border-left: 2px solid rgba(0, 128, 0, .4);
+    border-right: 1px solid rgba(0, 128, 0, .4);
+    border-bottom: 1px solid rgba(0, 128, 0, .4);
+    /* border-style: ; */
+    /* border-style: 2px 1px 1px 2px solid green;  */
+}
+/* Styling different form sections of paragraph, labels and inputs */
+.form-cover {
+    margin: 15px 5px;
+    border: 2px solid #ccc;
+}
+/* Styling paragraph element inside the form-cover class */
+.form-cover legend {
+    position: absolute;
+    margin: -12px 0 0 25px;
+    display: inline-block;
+    background-color: white;
+}
+/* Styling the form-details class */
+.form-details {
+    margin-top: 1%;
+}
+/* Styling each input section in the form-details class */
+.form-details .detail {
+    padding-left: 15px;
+}
+/* Styling inputs, select options and textareas */
+input[type=text], select, textarea {
+    width: 35%;
+    padding: 2px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+}
+/* Styling the width of the textarea */
+textarea, input[type=file] {
+    width: 35%;
+}
+/* Styling #transport select individually */
+#transport {
+    width: 18%;
+}
+#transport option:first-child, #transport option:last-child {
+    font-weight: bold;
+}
+#transport option:nth-child(2), #transport option:nth-child(3)  {
+    padding-left: 15px;
+}
+/* Style the label to display next to the inputs */
+label {
+    padding: 3px 12px 3px 0;
+    display: inline-block;
+}
+/* Floating column for labels: 28% width */
+.column-25 {
+    float: left;
+    width: 28%;
+    margin-top: 6px;
+}
+/* Floating column for inputs: 72% width */
+.column-75 {
+    float: left;
+    width: 72%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.detail {
+    position: relative;
+}
+.detail small {
+    visibility: hidden;
+    padding-left: 30px;
+    font-size: 17px;
+    color: #f74f0c;
+}
+.detail.success input[type=text], .detail.success textarea, .detail.success select {
+    border: 2px solid #2ecc71;
+}
+.detail.error input, .detail.error textarea, .detail.error select {
+    border: 2px solid #f74f0c;
+}
+.detail.error small, .detail.error-image small {
+    visibility: visible;
+}
+.detail:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other*/
+@media screen and (max-width: 600px) {
+    .column-25, .column-75 {
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type=text], select, textarea, #transport {
+        width: 95%;
+    }
+    .container {
+        margin: 40px 10px;
+    }
+}
+
+/* Styling submit button */
+button {
+    margin: 10px;
+    padding: 6px 15px;
+    font-family: Arial;
+    font-size: 30px;
+    background-color: rgba(0, 0, 255, .8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
