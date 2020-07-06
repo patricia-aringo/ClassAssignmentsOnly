@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<form name="mydata" action="#"> 
+    <div class ="container">
+      <h1 class = "borders">Grouped form controls with too long legend:</h1>
+      <div class = "borders1" height="50">
+      <fieldset> 
+      <legend>Your address</legend>
+      <label for = "name">First name</label>
+      <input type = "text" name = "Phillip" id = "name">
+      <br><br>
+      <label for = "name2">Last name</label>
+      <input type = "text" name = "Jotham" id = "name2">
+      <br><br>
+      <label for = "street">Street</label>
+      <input type = "text" name = "street" id = "street">
+      <br><br>
+      <label for = "city">City</label>
+      <input type = "text" name = "city" id = "city">
+      </fieldset> 
+
+      <br><br>
+      <fieldset> 
+      <legend>Additional details</legend>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" ></textarea>
+      <br><br>
+      <label for="avatar">Image</label>
+      <input type="file"
+             class="round"
+             id="avatar" name="avatar"  
+             accept="image/png, image/jpeg">
+      <br><br>
+      <label for = "age">Age Group</label>
+      <input id = "age"  name = "age" type = "number" step = "1" placeholder="0 to 9 Years" class="round">
+      </fieldset> 
+
+      <br><br>
+      <fieldset> 
+      <legend>Interest</legend>
+      <label for="hobbies">Hobbies</label>
+      <fieldset id = "hobbies" class = "field">
+          <p>
+              Playing soccer <br>Dancing <br>Gardening <br>Watching movies
+          </p>
+        </fieldset>
+      <br><br>
+      <label for = "car">Favorite car?</label>
+      <input id = "car"  name = "car" type = "number" step = "1" placeholder="Volvo" class="round">
+      <br><br>
+        <label for="transport">Favorite public transport</label>
+        <fieldset id = "transport" class = "reduce-field">
+            <a class="bold">Ground</a><br>
+            <a class="reduce-text">Train<br></a>
+            <a class="reduce-text">Bus<br></a>
+            <a class="bold">Water</a>
+        </fieldset> 
+        <input type="submit" value="Submit" onclick= 'validate()'>
+
+
+
+
+        
+    </div>  
+    <a> &#169; OKIROR PHILLIP JOTHAM </a>
+    <script src="/validate.js"></script>
+    </div>
+    
