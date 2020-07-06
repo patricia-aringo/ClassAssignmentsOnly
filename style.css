@@ -1,0 +1,85 @@
+html{
+    font-family:sans-serif;
+    color:#333;
+}
+body{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+input[type=text], select, textarea {
+width: 50%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+}
+
+
+.container {
+border-radius: 15px;
+/* background-color: #f2f2f2; */
+padding: 10px;
+}
+
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+
+.col-75 {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.col-25, .col-75, input[type=submit] {
+width: 100%;
+margin-top: 0;
+}
+}
+.drop_down.hoover{
+    background-color: blue;
+}
+.outer{
+    background: lightgreen;
+    border-radius: 15px;
+    position: relative;
+    width: 700px;
+    height: auto;
+    margin-left: 20%;
+    border: 1px;
+    border-style: solid;
+    border-color: green;
+}
+.content{
+    position: relative;
+    background: white;
+    border-radius: 2px;
+    width: 95%;
+    margin: 2%;
+    padding: 0.5%;
+    padding-bottom: 10%;
+    border: 1px;
+    top: 2px;
+    bottom: 20px;
+    border-style: solid;
+    border-color: green;
+}
+.page_title{
+    margin-left: 15px;
+    color: green;
+    
+    
+}

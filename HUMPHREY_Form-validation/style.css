@@ -1,0 +1,21 @@
+fieldset {
+    margin: 0.9%;
+    width: 90%;
+  }
+  
+  label {
+    display:inline-flex;
+    vertical-align:top;
+    width: 500px;
+  }
+  input{
+    width: auto;
+  }
+  .my_name {
+    color: blue;
+    text-align: center;
+    width: 50%;
+  }
+  #submit {
+    margin-left: 1%;
+  }

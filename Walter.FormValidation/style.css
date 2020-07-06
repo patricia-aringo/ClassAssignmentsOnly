@@ -1,0 +1,83 @@
+body {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+label {
+  width: 200px;
+  padding-right: 20px;
+  
+}
+
+#form_label {
+  color: #007715;
+  font-weight: bold;
+  font-size: large;
+  width: 400px;
+}
+
+#content {
+  background-color: #cceeb9;
+  border: 1px solid #007715;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+#forms {
+  width: 97%;
+  border: 1px solid #007715;
+  background-color: #fff;
+  padding: 0.3rem;
+  padding-bottom: 1rem;
+}
+
+.butn{
+  margin-left: 150px;
+  background-color: #8e44ad;
+  color: #fff;
+  display: block;
+  width: 50%;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+}
+
+
+.form-control.success input{
+  border-color: #2ecc71;
+}
+
+.form-control.success textarea{
+  border-color: #2ecc71;
+}
+
+.form-control.success select{
+  border: 2px solid #2ecc71;
+}
+
+
+.form-control.error input{
+  border: 2px solid red;
+}
+
+.form-control.error textarea{
+  border-color: red;
+}
+
+.form-control.error select{
+  border: 2px solid red;
+}
+
+
+
+.form-control small {
+  visibility: hidden;
+   position: absolute;
+ 
+}
+
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}

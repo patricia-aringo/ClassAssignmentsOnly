@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML with JS</title>
+    <style>
+      .container{
+  background-color: rgb(190, 238, 143);
+  height: 100%;
+  border: solid 1px green;
+  border-radius: 10px;
+  margin: 50px 100px;
+}
+#the_title{
+  color: rgb(6, 94, 6);
+  margin-left: 12px;
+}
+#form{
+  border: solid 1px green;
+  background-color: white;
+  margin: 10px;
+  padding-bottom: 80px;
+}
+.control, fieldset{
+  margin: 7px 5px;
+}
+label{
+  vertical-align: top;
+  display: inline-block;
+  width: 200px;
+}
+#copyright{
+  margin-left: 450px;
+}
+button{
+  position: relative;
+}
+  </style>
+
+</head>
+<body>
+    <div class="head">
+        <div class="container">
+            <h3 id="the_title">Grouped from controls with too long legend:</h3>
+            <div class="inner_field">
+                <form id="form" name="controls">
+                    <fieldset>
+                      <legend>Your address</legend>
+                      <div class="control">
+                        <label for="first_name">First name</label><input id="first_name" name="first_name" type="text" />
+                      </div>
+                      <div class="control">
+                        <label for="last_name">Last name</label><input id="last_name" name="last_name" type="text" />
+                      </div>
+                      <div class="control">
+                        <label for="street">Street</label><input id="street" name="street" type="text" />
+                      </div>
+                      <div class="control">
+                        <label for="city">City</label><input id="city" name="city" type="text" />
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Additional details</legend>
+                      <div class="control">
+                        <label for="biography">Biography</label><textarea id="biography" name="biography" placeholder="More than 100 characters & letters only"></textarea>
+                      </div>
+                      <div class="control">
+                        <label for="image">Image</label><input id="image" type="file" name="file" />
+                      </div>
+                      <div class="control">
+                        <label for="age_group">Age Group</label><select id="age_group">
+                          <option>
+                            0 to 9 Years
+                          </option>
+                        </select>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Interests</legend>
+                      <div class="control">
+                        <label for="hobbies">Hobbies</label><select id="hobbies" multiple="">
+                          <option>
+                            Playing soccer
+                          </option>
+                          <option>
+                            Dancing
+                          </option>
+                          <option>
+                            Gardening
+                          </option>
+                          <option>
+                            Watching movies
+                          </option>
+                        </select>
+                      </div>
+                      <div class="control">
+                        <label for="favourite_car">Favourite car?</label><select id="favourite_car">
+                            <option>
+                              Volvo
+                            </option>   
+                          </select>
+                      </div>
+                      <div class="control">
+                        <label for="public_transports">Favourite public transport?</label><select id="public_transports" multiple=""><optgroup label="Ground">
+                            <option>
+                              Train
+                            </option>
+                            <option>
+                              Bus
+                            </option>
+                          </optgroup><optgroup label="Water">     
+                          </optgroup></select>
+                      </div>
+                    </fieldset>
+                    <small id="copyright">&copy;Kakuba Trevor 2020</small>
+                    <button type="submit" form="form" value="Submit" onClick ="validate()">Submit</button>
+                  </form>
+                                   
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+validate  = () =>{
+  var first_name = document.controls.first_name;
+  var last_name = document.controls.last_name;
+  var street = document.controls.street;
+  var city = document.controls.city;
+  var biography = document.controls.biography;
+
+  //Validating the first name.
+  if(first_name.value.length == ""){
+    first_name.style.border = '1px solid red'
+    alert("First name must be filled")
+  }
+  //Rejecting numbers and special characters in first name. 
+  var letters = /^[A-Za-z]+$/;
+        
+  if(!first_name.value.match(letters)){
+    first_name.style.border = '1px solid red'
+    alert("Please enter a valid name")
+  }
+
+  //Validating the Last name.
+  if(last_name.value.length == ""){
+    last_name.style.border = '1px solid red'
+    alert("Last name must be filled")
+  }
+  //Rejecting numbers and special characters in Last name. 
+  var letters = /^[A-Za-z]+$/;
+        
+  if(!last_name.value.match(letters)){
+    last_name.style.border = '1px solid red'
+    alert("Please enter a valid name")
+  }
+
+  // Validating the street. 
+  if(street.value.length == ""){
+    street.style.border = '1px solid red'
+    alert("Street must be filled !")
+  }
+
+  //Allowing alphanumeric expressions for street.
+  var letters = /^[0-9]+$/;
+
+  if(street.value.match(letters)){
+    street.style.border = '1px solid red'
+    alert("Enter valid street address !")
+  }
+  // Validating the city. 
+  if(city.value.length == ""){
+    city.style.border = '1px solid red'
+    alert("City must be filled !")
+  }
+
+  //Allowing alphanumeric expressions for city.
+  var letters = /^[0-9]+$/;
+
+  if(city.value.match(letters)){
+    city.style.border = '1px solid red'
+    alert("Enter valid city name !")
+  }
+
+  // Validating Biography.
+  var letters = /^[A-Za-z]+$/;
+        
+  if(!biography.value.match(letters)){
+    biography.style.border = '1px solid red'
+    alert("Please enter biography")
+  }
+
+  if(biography.value.length < 100){
+    biography.style.border ='1px solid red'
+    alert("Biography should be more than 100 characeters !")
+  }
+
+
+}
+</script>
+</html>

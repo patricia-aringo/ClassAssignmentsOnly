@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-size: 16px;
+    background: #f9f9f9;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;}
+.container{
+    width: 50%; 
+    margin:auto; 
+    border-radius: 25px; 
+    border: solid green 1px; 
+    background-color: #CCEEB9;
+}
+h2{
+    margin: 20px;
+}
+p{
+    text-align: center;
+}
+form{
+    margin: 20px; background-color: white; border:1px solid green; padding:10px;
+}
+.row{
+    width: 100%;
+    padding-bottom: 5px;
+}
+.row small{
+    visibility: hidden;
+}
+.row.error small{
+    visibility: visible;
+}
+.row.error input, .row.error textarea, .row.error select{
+    border: 2px solid red;
+}
+.row.success input, .row.success select{
+    border: 2px solid green;
+}
+small{
+    color: red;
+    padding-left: 190px;
+}
+
+
+
+
+input, textarea, select{
+    display: block;
+    margin-top: -20px;
+    margin-left: 190px;
+    margin-bottom: 10px;
+}
+
+label{
+    padding-right: 3.5em;
+}
+fieldset{
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+<div class= "container">
+    <h2>Grouped form controls with too long legend</h2>
+
+<form action="" id="contactform">
+
+    <fieldset>
+        <legend>Your address</legend>
+        <div class="row">
+            <label for="fname">First name</label>
+            <input type="text"  id="fname">
+            <small> hello</small>
+        </div>
+        <div class="row">
+            <label for="lname">Last name</label>
+            <input type="text"  id="lname">
+            <small>hello</small>
+        </div>
+        <div class="row">
+            <label for="street">Street</label>
+            <input type="text" id="street">
+            <small> hello</small>
+        </div>
+        <div class="row">
+            <label for="city" style="padding-right: 3.5em;">City</label>
+            <input type="text" id="city">
+            <small>hello</small>
+        </div>
+    </fieldset>
+
+     <fieldset>
+        <legend>Additional details</legend>
+        <div class="row">
+            <label>Biography</label>
+            <textarea id="bio" cols="22"></textarea>
+            <small>hello</small>
+        </div>
+        <div class="row">
+            <label>Image</label>
+            <input type="file" id="myFile">
+            <small>hello</small>
+        </div>
+        <div class="row">
+            <label>Age Group</label>
+            <select id="ages">
+                <option value="one">0 to 9 Years</option>
+                <option value="two">10 to 19 Years</option>
+            </select>
+            <small>hello</small>
+        </div>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Interests</legend>
+        <div class="row">
+            <label>Hobbies</label>
+            <select multiple id="hobbie">
+                <option value="playing">Playing Soccer</option>
+                <option value="dancing">Dancing</option>
+                <option value="gardening">Gardening</option>
+                <option value="watching">Watching</option>
+            </select>
+            <small>hello</small>
+        </div>
+        <div class="row">
+            <label>Favourite car?</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="volvo">Toyota</option>
+            </select>
+            <small>hello</small>
+        </div>
+        <div class="row">
+            <label>Favourite public transport?</label>
+            <select multiple name="cat" id="cat">
+                <optgroup label="Ground">
+                    <option value="601">Train</option>
+                    <option value="602">Bus</option>
+                </optgroup>
+                <optgroup label="Water">
+                    <option value="601">Boat</option>
+                </optgroup>
+            </select>
+            <small>hello</small>
+        </div>
+    </fieldset>
+    
+    <button type="submit">Submit</button>
+    
+</form>  
+
+<small class="copy"> &copy; davies wabuluka</small>
+</div>
+
+<script>
+const main1 = document.getElementById('contactform');
+const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+const street = document.getElementById('street');
+const city = document.getElementById('city');
+
+const bio = document.getElementById('bio');
+const image = document.getElementById('myFile');
+
+const age = document.getElementById('ages');
+const cat = document.getElementById('cat');
+
+const car = document.getElementById('cars');
+const hobbie = document.getElementById('hobbie')
+
+main1.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    
+    validate();
+})
+
+
+function validate(){
+    const firstname = fname.value;
+    const lastname = lname.value;
+    const streetname = street.value;
+    const cityname = city.value;
+    const biography = bio.value;
+    const imageFile = image.value;
+    const agebracket = age.value;
+    const category = cat.value;
+    const cars = car.value;
+    const hobbies = hobbie.value;
+
+    let regex = /^[A-z]+$/;
+
+    // Validating First Name input area
+    if(firstname == ''){
+        errorCheck(fname, 'First name must me provided')
+    }else if(!firstname.match(regex)){
+        errorCheck(fname, 'First name must be letters')
+    }else if(firstname.length < 5 || firstname.length > 12){
+        errorCheck(fname, 'First name must be more than five characters')
+    }else{
+        successCheck(fname)
+    }
+
+    // Validating Last Name input area
+    if(lastname == ''){
+        errorCheck(lname, 'Last name must me provided')
+    }else if(!lastname.match(regex)){
+        errorCheck(fname, 'Last name must be letters')
+    }else if(lastname.length < 5 || lastname.length > 12){
+        errorCheck(lname, 'Last name must be more than five characters')
+    }else{
+        successCheck(lname)
+    }
+
+    // Validating Street input area
+    if(streetname == ''){
+        errorCheck(street, 'Street name must me provided')
+    }else if(!streetname.match(regex)){
+        errorCheck(street, 'Street name must be letters')
+    }else if(streetname.length < 5 || streetname.length > 12){
+        errorCheck(street, 'Street name must be more than five characters')
+    }else{
+        successCheck(street)
+    }
+    // Validating City input area
+    if(cityname == ''){
+        errorCheck(city, 'City name must me provided')
+    }else if(!cityname.match(regex)){
+        errorCheck(city, 'City name must be letters')
+    }else if(cityname.length < 5 || cityname.length > 12){
+        errorCheck(city, 'City name must be more than five characters')
+    }else{
+        successCheck(city)
+    }
+
+    // Validating the Biography Textarea
+    if(biography ==""){
+        errorCheck(bio, 'You must provide your biography')
+    }else{
+        successCheck(bio)
+    }
+
+    // Validating image field
+    if(imageFile == ''){
+        errorCheck(image, 'Image must me provided')
+    }else{
+        successCheck(image)
+    }
+
+    // Validating age bracket
+    if(agebracket == 'one'){
+        errorCheck(age, 'You have not selected another age bracket')
+    }else{
+        successCheck(age)
+    }
+
+    // Validating Public transport
+    if(category == ""){
+        errorCheck(cat, 'Field not attended to')
+    }else{
+        successCheck(cat)
+    }
+
+    // Validating car field
+    if(cars == "volvo"){
+        errorCheck(car, 'Field not attended to')
+    }else{
+        successCheck(car)
+    }
+
+    // Validating
+    if(hobbies ==""){
+        errorCheck(hobbie, 'Field not attended to')
+    }else{
+        successCheck(hobbie)
+    }
+
+}
+
+var errorCheck = (input, message)=>{
+    const row = input.parentElement;
+    const small = row.querySelector('small');
+    small.innerText = message;
+    row.className = 'row error';
+}
+var successCheck = (input)=>{
+    const  row = input.parentElement;
+    row.className = 'row success'
+}
+</script>
+</body>
+</html>

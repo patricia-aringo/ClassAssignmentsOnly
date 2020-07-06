@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=br, initial-scale=1.0">
+    <title>Humphrey form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--form start-->
+    <form name="mydata" action="#" >
+      <!--fisrt fieldset-->
+        <fieldset>
+          <!--Your address section-->
+          <legend>Your address</legend>
+          <div>
+            <!--first name-->
+            <label for="firstname">First name</label>
+            <input id="first_name" name="firstname" placeholder="Enter your first name" type="text"/>
+          </div>
+          <div>
+            <!--last name-->
+            <label for="lastname">Last name </label>
+            <input id="last_name" name="lastname" placeholder="Enter your last name" type="text"/>
+          </div>
+
+          <div>
+            <!--street-->
+            <label for="street">Street</label>
+            <input id="street" name="street" type="text"/>
+          </div>
+          <div>
+            <!--city-->
+            <label for="city">City</label>
+            <input id="city" name="city" type="text"/>
+        </fieldset>
+        <!--second fieldset-->
+        <fieldset>
+          <!--Additional details section-->
+            <legend>Additional details</legend>
+            <br>
+            <div>
+              <!--biography-->
+              <label for="biography">Biography</label>
+              <textarea name="biography" required id="biography" placeholder="Not more than 200 words" cols="30" rows="2"></textarea>
+            </div>
+            <br>
+            <div>
+              <!--image-->
+              <label for="image">Image</label>
+              <input required id="image" name="image" type="file" accept="img/jpg"/>
+            </div>
+            <br>
+            <div>
+              <!--age group-->
+              <label for="age_group">Age Group</label>
+              <select required id="age_group">
+                <option>
+                  0 to 9 Years
+                </option>
+               </select>
+            </div>
+            <br>
+          </fieldset>
+          <!--Third fieldset-->
+          <fieldset>
+            <!--intrests section-->
+            <legend>Interests</legend>
+            <br>
+            <div>
+              <!--hobbies-->
+              <label for="hobbies">Hobbies</label>
+              <select required id="hobbies" multiple="hobbies">
+                <option>
+                  Playing soccer
+                </option>
+                <option>
+                  Dancing
+                </option>
+                <option>
+                  Gardening
+                </option>
+                <option>
+                  Watching movies
+                </option>
+              </select>
+            </div>
+            <br>
+            <!--favourite car section-->
+            <div>
+              <label for="favourite_car">Favourite car?</label>
+              <select required id="favourite_car"><optgroup label="favourite_car">
+                  <option>
+                    Volvo
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <br>
+            <div>
+              <!--favourite public tramsport section-->            
+              <label for="public_transports">Favourite public transport?</label>
+              <select required id="public_transports" multiple="public_transports">
+                  <optgroup label="Ground">
+                  <option>
+                    Train
+                  </option>
+                  <option>
+                    Bus
+                  </option>
+                </optgroup><optgroup label="Water">
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+          </fieldset>
+          <input type="submit" name="submit" id="submit" onclick="validate()">
+    </form>
+    <!--form end-->
+    <!--copy right-->
+    <p class="my_name"><i>&copy;Humphrey Bwire: <span>Form Validation Assignment
+     &nbsp;&nbsp; Rights Reserved</span></i></p>
+</body>
+<script src="/form-validation.js"></script>
+</html>
