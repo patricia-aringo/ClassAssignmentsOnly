@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="dotjs.css">
+    <title>forms</title>
+</head>
+
+<body>
+    
+    <div class="outer">
+        <h2 class="page_title">Grouped form controls with too long legend</h2>
+
+        <div class="content">
+
+            <!-- your address -->
+
+            <form class="#" name="your_address">
+                <fieldset>
+                    <table id="t01">
+                        <legend> Your Address </legend>
+                        <tr>
+
+                            <td class="left"> <label class="f_name">First name</label></td>
+                            <td> <input type="text" name="firstname" placeholder="">
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td class="left"><label class="l_name">Lastt name</label></td>
+                            <td><input type="text" name="lastname" placeholder=""></td>
+                        </tr>
+
+                        <tr>
+                            <td class="left"><label class="street">Street</label></td>
+                            <td><input type="text" name="street" placeholder=""></td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="left"> <label class="city">City</label></td>
+                            <td><input type="text" name="city" placeholder=""></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+            </form>
+
+
+            <!-- end of your address -->
+
+            <!-- Additiona details -->
+
+            <form class="#" name="additional_details">
+                <fieldset>
+                    <table id="t02">
+                        <legend> additional details </legend>
+
+                        <tr>
+
+                            <td class="left"> <label class="bio">Biography</label></td>
+                            <td>
+                                <textarea name="bio"></textarea>
+                                <!-- <input type="textarea" name="bio"> -->
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td class="left"><label class="">image</label></td>
+                            <td>
+                                <input type="file" name="img" class="image">
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="left"><label class="ages">Age Group</label></td>
+                            <td>
+                                <select class="drop_down" required name="ages">
+                                    <option selected value=""> 0 t0 9 years </option>
+                                    <option>10 t0 15</option>
+                                    <option>16 t0 18</option>
+                                    <option>19 t0 25</option>
+                                    <option>26 t0 35</option>
+                                    <option>36 t0 65</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            <!-- end of additional details -->
+
+            <!-- interests -->
+            <form class="#" name="interests">
+                <fieldset>
+                    <table id="t03">
+                        <legend> interests </legend>
+                        <tr>
+
+                            <td class="left"> <label class="hobi">Hobbies</label></td>
+                            <td>
+                                <!-- <input type="text" id="firstname" placeholder=""> -->
+                                <!-- <fieldset style="width: 150px;" name="hobbies">
+                                    playing soccer<br>
+                                    Dancing <br>
+                                    Gardening <br>
+                                    Watching movies
+                                </fieldset> -->
+                                <select name="hobbies" class="#" required multiple style="width: 120px;">
+                                    <option>playing soccer</option>
+                                    <option>Dancing</option>
+                                    <option> Gardening</option>
+                                    <option selected>Watching</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="left"><label class="car">Favourite car?</label></td>
+                            <td>
+                                <select name="fav_car" class="drop_down" required style="width: 120px;">
+                                    <option selected value="">volvo</option>
+                                    <option>BMW</option>
+                                    <option>V-8</option>
+                                    <option>ferari</option>
+                                    <option>Benz</option>
+                                    <option>scannier</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td class="left"><label class="fav_tp">favourite public Transport?</label></td>
+                            <td>
+                                <!-- <input type="text" id="lasttname" placeholder=""> -->
+                                <!-- <fieldset name="fav_public_transport" style="width: 80px;">
+                                    Ground<br>
+                                    Train <br>
+                                    Bus <br>
+                                    Water
+                                </fieldset> -->
+
+                                <select name="fav_public_transport" class="#" required multiple style="width: 120px;">
+                                    <option selected><strong>Ground</strong></option>
+                                    <option>Train</option>
+                                    <option>  Bus</option>
+                                    <option><strong>Water</strong></option>
+                                </select>
+
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input type="submit" name="submit" onclick="validate()" value="Next" class="next"></input>
+            </form>
+
+
+        </div>
+        <h5>&copy bp mike</h5>
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript" src="dotjs.js"></script>
+<!-- <script src="dotjs.js"></script> -->
+
+</script>
+
+</html>
